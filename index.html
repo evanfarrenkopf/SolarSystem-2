@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+ Lab 3 - COMP3801 Spring 2025
+   ColorCube - draw a cube with six different color faces
+-->
+<html>
+  <head>
+    <title>SolarSystem</title>
+    <link rel="icon" type="image/png" href="COMP3801_RGB_cube.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Common/initShaders2.js" type="text/javascript"></script>
+    <script src="Common/MV.js" type="text/javascript"></script>
+    <script src="Ring.js" type="text/javascript"></script>
+    <script src="Planet.js" type="text/javascript"></script>
+    <script src="Ship.js"></script>
+    <script src="Solar.js" type="text/javascript"></script>
+  </head>
+  <body onload="new Solar('gl-canvas')">
+    <div align="center">
+      <canvas id="gl-canvas" width="900" height="900">
+        This browser doesn't support the HTML5 canvas element
+      </canvas>
+    </div>
+    <div align="center">
+      <button type="button" id="gl-canvas-playButton">
+        Play
+      </button>
+      <button type="button" id = "gl-canvas-pauseButton">
+        Pause
+      </button>
+    </div>
+    <div align="center">
+      <button type="button" id="gl-canvas-split">
+        Split View
+      </button>
+      <button type="button" id="gl-canvas-map">
+        Map View
+      </button>
+      <button type="button" id="gl-canvas-ship">
+        Ship's View
+      </button>
+    </div>
+    <div align="center">
+      <button type="button" id="gl-canvas-paths">
+        Toggle Orbit Paths
+      </button>
+    </div>
+  </body>
+</html>
